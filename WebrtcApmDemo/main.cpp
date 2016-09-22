@@ -30,6 +30,9 @@ int main(int argc, const char * argv[]) {
     const char* out_pcm = "out.pcm";  // 原始声音文件
     testAECProcess(mic_pcm, ref_pcm, out_pcm,
                    8000, 1, 40);
+    
+    // 此处由于缺少合适的测试文件，只尝试了采样率8000Hz，其他采样率和双声道并未测试；
+    
     return 0;
 }
 
