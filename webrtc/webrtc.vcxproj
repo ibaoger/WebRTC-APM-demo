@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3254F6A2-6677-45EF-898B-41664413E996}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>webrtc</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;WEBRTC_WIN;__x86_64__;WEBRTC_APM_DEBUG_DUMP;NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;WEBRTC_WIN;__x86_64__;WEBRTC_APM_DEBUG_DUMP;NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="base\arraysize.h" />
+    <ClInclude Include="base\array_view.h" />
+    <ClInclude Include="base\atomicops.h" />
+    <ClInclude Include="base\basictypes.h" />
+    <ClInclude Include="base\byteorder.h" />
+    <ClInclude Include="base\checks.h" />
+    <ClInclude Include="base\common.h" />
+    <ClInclude Include="base\constructormagic.h" />
+    <ClInclude Include="base\criticalsection.h" />
+    <ClInclude Include="base\event.h" />
+    <ClInclude Include="base\logging.h" />
+    <ClInclude Include="base\platform_thread.h" />
+    <ClInclude Include="base\platform_thread_types.h" />
+    <ClInclude Include="base\safe_conversions.h" />
+    <ClInclude Include="base\safe_conversions_impl.h" />
+    <ClInclude Include="base\sanitizer.h" />
+    <ClInclude Include="base\stringutils.h" />
+    <ClInclude Include="base\thread_annotations.h" />
+    <ClInclude Include="base\thread_checker.h" />
+    <ClInclude Include="base\thread_checker_impl.h" />
+    <ClInclude Include="base\type_traits.h" />
+    <ClInclude Include="base\win32.h" />
+    <ClInclude Include="common_audio\fft4g.h" />
+    <ClInclude Include="common_audio\include\audio_util.h" />
+    <ClInclude Include="common_audio\resampler\include\resampler.h" />
+    <ClInclude Include="common_audio\ring_buffer.h" />
+    <ClInclude Include="common_audio\signal_processing\complex_fft_tables.h" />
+    <ClInclude Include="common_audio\signal_processing\include\real_fft.h" />
+    <ClInclude Include="common_audio\signal_processing\include\signal_processing_library.h" />
+    <ClInclude Include="common_audio\signal_processing\include\spl_inl.h" />
+    <ClInclude Include="common_audio\signal_processing\resample_by_2_internal.h" />
+    <ClInclude Include="common_audio\vad\include\webrtc_vad.h" />
+    <ClInclude Include="common_audio\vad\vad_core.h" />
+    <ClInclude Include="common_audio\vad\vad_filterbank.h" />
+    <ClInclude Include="common_audio\vad\vad_gmm.h" />
+    <ClInclude Include="common_audio\vad\vad_sp.h" />
+    <ClInclude Include="common_audio\wav_file.h" />
+    <ClInclude Include="common_audio\wav_header.h" />
+    <ClInclude Include="common_types.h" />
+    <ClInclude Include="common_video\rotation.h" />
+    <ClInclude Include="modules\audio_coding\codecs\isac\bandwidth_info.h" />
+    <ClInclude Include="modules\audio_coding\codecs\isac\main\include\isac.h" />
+    <ClInclude Include="modules\audio_coding\codecs\isac\main\source\codec.h" />
+    <ClInclude Include="modules\audio_coding\codecs\isac\main\source\entropy_coding.h" />
+    <ClInclude Include="modules\audio_coding\codecs\isac\main\source\filterbank_tables.h" />
+    <ClInclude Include="modules\audio_coding\codecs\isac\main\source\lpc_analysis.h" />
+    <ClInclude Include="modules\audio_coding\codecs\isac\main\source\os_specific_inline.h" />
+    <ClInclude Include="modules\audio_coding\codecs\isac\main\source\pitch_estimator.h" />
+    <ClInclude Include="modules\audio_coding\codecs\isac\main\source\settings.h" />
+    <ClInclude Include="modules\audio_coding\codecs\isac\main\source\structs.h" />
+    <ClInclude Include="modules\audio_processing\aecm\aecm_core.h" />
+    <ClInclude Include="modules\audio_processing\aecm\aecm_defines.h" />
+    <ClInclude Include="modules\audio_processing\aecm\echo_control_mobile.h" />
+    <ClInclude Include="modules\audio_processing\aec\aec_common.h" />
+    <ClInclude Include="modules\audio_processing\aec\aec_core.h" />
+    <ClInclude Include="modules\audio_processing\aec\aec_core_optimized_methods.h" />
+    <ClInclude Include="modules\audio_processing\aec\aec_rdft.h" />
+    <ClInclude Include="modules\audio_processing\aec\aec_resampler.h" />
+    <ClInclude Include="modules\audio_processing\aec\echo_cancellation.h" />
+    <ClInclude Include="modules\audio_processing\agc\legacy\gain_control.h" />
+    <ClInclude Include="modules\audio_processing\logging\apm_data_dumper.h" />
+    <ClInclude Include="modules\audio_processing\ns\defines.h" />
+    <ClInclude Include="modules\audio_processing\ns\noise_suppression.h" />
+    <ClInclude Include="modules\audio_processing\ns\noise_suppression_x.h" />
+    <ClInclude Include="modules\audio_processing\ns\nsx_core.h" />
+    <ClInclude Include="modules\audio_processing\ns\nsx_defines.h" />
+    <ClInclude Include="modules\audio_processing\ns\ns_core.h" />
+    <ClInclude Include="modules\audio_processing\ns\windows_private.h" />
+    <ClInclude Include="modules\audio_processing\utility\block_mean_calculator.h" />
+    <ClInclude Include="modules\audio_processing\utility\delay_estimator.h" />
+    <ClInclude Include="modules\audio_processing\utility\delay_estimator_internal.h" />
+    <ClInclude Include="modules\audio_processing\utility\delay_estimator_wrapper.h" />
+    <ClInclude Include="modules\audio_processing\vad\common.h" />
+    <ClInclude Include="modules\audio_processing\vad\gmm.h" />
+    <ClInclude Include="modules\audio_processing\vad\noise_gmm_tables.h" />
+    <ClInclude Include="modules\audio_processing\vad\pitch_based_vad.h" />
+    <ClInclude Include="modules\audio_processing\vad\pitch_internal.h" />
+    <ClInclude Include="modules\audio_processing\vad\pole_zero_filter.h" />
+    <ClInclude Include="modules\audio_processing\vad\standalone_vad.h" />
+    <ClInclude Include="modules\audio_processing\vad\vad_audio_proc.h" />
+    <ClInclude Include="modules\audio_processing\vad\vad_audio_proc_internal.h" />
+    <ClInclude Include="modules\audio_processing\vad\vad_circular_buffer.h" />
+    <ClInclude Include="modules\audio_processing\vad\voice_activity_detector.h" />
+    <ClInclude Include="modules\audio_processing\vad\voice_gmm_tables.h" />
+    <ClInclude Include="modules\include\module_common_types.h" />
+    <ClInclude Include="modules\utility\include\audio_frame_operations.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="system_wrappers\include\compile_assert_c.h" />
+    <ClInclude Include="system_wrappers\include\cpu_features_wrapper.h" />
+    <ClInclude Include="system_wrappers\include\logging.h" />
+    <ClInclude Include="system_wrappers\include\metrics.h" />
+    <ClInclude Include="system_wrappers\include\metrics_default.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="typedefs.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="base\checks.cc" />
+    <ClCompile Include="base\common.cc" />
+    <ClCompile Include="base\criticalsection.cc" />
+    <ClCompile Include="base\event.cc" />
+    <ClCompile Include="base\platform_thread.cc" />
+    <ClCompile Include="base\thread_checker_impl.cc" />
+    <ClCompile Include="base\win32.cc" />
+    <ClCompile Include="common_audio\audio_util.cc" />
+    <ClCompile Include="common_audio\fft4g.c" />
+    <ClCompile Include="common_audio\resampler\resampler.cc" />
+    <ClCompile Include="common_audio\ring_buffer.c" />
+    <ClCompile Include="common_audio\signal_processing\complex_bit_reverse.c" />
+    <ClCompile Include="common_audio\signal_processing\complex_fft.c" />
+    <ClCompile Include="common_audio\signal_processing\copy_set_operations.c" />
+    <ClCompile Include="common_audio\signal_processing\cross_correlation.c" />
+    <ClCompile Include="common_audio\signal_processing\division_operations.c" />
+    <ClCompile Include="common_audio\signal_processing\downsample_fast.c" />
+    <ClCompile Include="common_audio\signal_processing\energy.c" />
+    <ClCompile Include="common_audio\signal_processing\get_scaling_square.c" />
+    <ClCompile Include="common_audio\signal_processing\min_max_operations.c" />
+    <ClCompile Include="common_audio\signal_processing\randomization_functions.c" />
+    <ClCompile Include="common_audio\signal_processing\real_fft.c" />
+    <ClCompile Include="common_audio\signal_processing\resample.c" />
+    <ClCompile Include="common_audio\signal_processing\resample_48khz.c" />
+    <ClCompile Include="common_audio\signal_processing\resample_by_2.c" />
+    <ClCompile Include="common_audio\signal_processing\resample_by_2_internal.c" />
+    <ClCompile Include="common_audio\signal_processing\resample_fractional.c" />
+    <ClCompile Include="common_audio\signal_processing\spl_init.c" />
+    <ClCompile Include="common_audio\signal_processing\spl_sqrt_floor.c" />
+    <ClCompile Include="common_audio\signal_processing\vector_scaling_operations.c" />
+    <ClCompile Include="common_audio\vad\vad_core.c" />
+    <ClCompile Include="common_audio\vad\vad_filterbank.c" />
+    <ClCompile Include="common_audio\vad\vad_gmm.c" />
+    <ClCompile Include="common_audio\vad\vad_sp.c" />
+    <ClCompile Include="common_audio\vad\webrtc_vad.c" />
+    <ClCompile Include="common_audio\wav_file.cc" />
+    <ClCompile Include="common_audio\wav_header.cc" />
+    <ClCompile Include="modules\audio_coding\codecs\isac\main\source\filterbanks.c" />
+    <ClCompile Include="modules\audio_coding\codecs\isac\main\source\filterbank_tables.c" />
+    <ClCompile Include="modules\audio_coding\codecs\isac\main\source\filter_functions.c" />
+    <ClCompile Include="modules\audio_coding\codecs\isac\main\source\intialize.c" />
+    <ClCompile Include="modules\audio_coding\codecs\isac\main\source\lpc_analysis.c" />
+    <ClCompile Include="modules\audio_coding\codecs\isac\main\source\pitch_estimator.c" />
+    <ClCompile Include="modules\audio_coding\codecs\isac\main\source\pitch_filter.c" />
+    <ClCompile Include="modules\audio_processing\aecm\aecm_core.cc" />
+    <ClCompile Include="modules\audio_processing\aecm\aecm_core_c.cc" />
+    <ClCompile Include="modules\audio_processing\aecm\echo_control_mobile.cc" />
+    <ClCompile Include="modules\audio_processing\aec\aec_core.cc" />
+    <ClCompile Include="modules\audio_processing\aec\aec_core_sse2.cc" />
+    <ClCompile Include="modules\audio_processing\aec\aec_rdft.cc" />
+    <ClCompile Include="modules\audio_processing\aec\aec_rdft_sse2.cc" />
+    <ClCompile Include="modules\audio_processing\aec\aec_resampler.cc" />
+    <ClCompile Include="modules\audio_processing\aec\echo_cancellation.cc" />
+    <ClCompile Include="modules\audio_processing\logging\apm_data_dumper.cc" />
+    <ClCompile Include="modules\audio_processing\ns\noise_suppression.c" />
+    <ClCompile Include="modules\audio_processing\ns\noise_suppression_x.c" />
+    <ClCompile Include="modules\audio_processing\ns\nsx_core.c" />
+    <ClCompile Include="modules\audio_processing\ns\nsx_core_c.c" />
+    <ClCompile Include="modules\audio_processing\ns\ns_core.c" />
+    <ClCompile Include="modules\audio_processing\utility\block_mean_calculator.cc" />
+    <ClCompile Include="modules\audio_processing\utility\delay_estimator.cc" />
+    <ClCompile Include="modules\audio_processing\utility\delay_estimator_wrapper.cc" />
+    <ClCompile Include="modules\audio_processing\vad\gmm.cc" />
+    <ClCompile Include="modules\audio_processing\vad\pitch_based_vad.cc" />
+    <ClCompile Include="modules\audio_processing\vad\pitch_internal.cc" />
+    <ClCompile Include="modules\audio_processing\vad\pole_zero_filter.cc" />
+    <ClCompile Include="modules\audio_processing\vad\standalone_vad.cc" />
+    <ClCompile Include="modules\audio_processing\vad\vad_audio_proc.cc" />
+    <ClCompile Include="modules\audio_processing\vad\vad_circular_buffer.cc" />
+    <ClCompile Include="modules\audio_processing\vad\voice_activity_detector.cc" />
+    <ClCompile Include="modules\utility\source\audio_frame_operations.cc" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="system_wrappers\source\cpu_features.cc" />
+    <ClCompile Include="system_wrappers\source\metrics_default.cc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

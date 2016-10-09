@@ -1,0 +1,627 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="base">
+      <UniqueIdentifier>{ecc49d2b-bbad-4a20-bb5f-6b358288e507}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common_audio">
+      <UniqueIdentifier>{b4d1aac4-4a8c-4fdf-93ab-c6f72954adfc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common_audio\include">
+      <UniqueIdentifier>{bf095a3c-32ed-4fef-b743-fe6d95ed786f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common_audio\resampler">
+      <UniqueIdentifier>{9bda4afb-112e-4cb8-a480-a53ed192e6b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common_audio\resampler\include">
+      <UniqueIdentifier>{c18d1269-de2c-441e-94b8-b6e82b79a451}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common_audio\signal_processing">
+      <UniqueIdentifier>{df6688cb-65f5-4937-ab55-216034c94aa8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common_audio\signal_processing\include">
+      <UniqueIdentifier>{23ff0ab1-859d-4832-9de9-6f8cabb107c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common_audio\vad">
+      <UniqueIdentifier>{3de91b75-e5d3-441b-a39a-8aa70034c5f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common_audio\vad\include">
+      <UniqueIdentifier>{98613e16-8fcd-4ef9-9372-df07b2988b41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common_video">
+      <UniqueIdentifier>{a956e9cb-38ae-467e-bc5f-2ddbb24c9b5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system_wrappers">
+      <UniqueIdentifier>{b043e492-e544-4814-93a1-dc09f5416fe2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system_wrappers\include">
+      <UniqueIdentifier>{5b5ada31-eaaa-4b82-9aae-1c459d9aa519}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system_wrappers\source">
+      <UniqueIdentifier>{f57dc706-44b4-4647-9a9e-bf1abe3d2d59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="modules">
+      <UniqueIdentifier>{65839175-5ad4-4161-b751-55eef8fa701c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="modules\audio_coding">
+      <UniqueIdentifier>{70bb2f6f-cca1-4870-8b10-f42e95566b73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="modules\audio_coding\codecs">
+      <UniqueIdentifier>{1c75c74a-5994-482e-b9f9-9554a1b6b431}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="modules\audio_coding\codecs\isac">
+      <UniqueIdentifier>{f6acbcf0-af36-482b-a87e-a9cc5b439baf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="modules\audio_coding\codecs\isac\main">
+      <UniqueIdentifier>{632f332e-9873-4238-8c95-2523882e8d25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="modules\audio_coding\codecs\isac\main\include">
+      <UniqueIdentifier>{d0332053-9326-48a3-9224-84a7b4c85e11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="modules\audio_coding\codecs\isac\main\source">
+      <UniqueIdentifier>{932793d1-cd2b-4930-9e31-55367c5ba3f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="modules\audio_processing">
+      <UniqueIdentifier>{baca6968-7557-4bd9-be44-2e6d646144a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="modules\audio_processing\aec">
+      <UniqueIdentifier>{cfd1013a-95d4-4f38-b741-5c7106ef65d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="modules\audio_processing\aecm">
+      <UniqueIdentifier>{82f252e9-c7be-4a8b-8749-c00f1ffe74c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="modules\audio_processing\agc">
+      <UniqueIdentifier>{d55086c7-61a3-47bd-9b02-ffb2dd613687}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="modules\audio_processing\agc\legacy">
+      <UniqueIdentifier>{c6019f08-59a9-4539-a10d-0129c95cff8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="modules\audio_processing\logging">
+      <UniqueIdentifier>{2740564b-876a-472c-9424-d4173af13b57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="modules\audio_processing\ns">
+      <UniqueIdentifier>{dcd12f2b-0e08-4678-93df-f0a9944c9ec1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="modules\audio_processing\utility">
+      <UniqueIdentifier>{6cc19b26-8d1e-44b8-891b-abd0bb901ef4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="modules\audio_processing\vad">
+      <UniqueIdentifier>{500aae76-d6c9-4f85-a767-2180b7c1deb8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="modules\include">
+      <UniqueIdentifier>{e304559f-d039-4632-bb5a-4b97ae3ee8d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="modules\utility">
+      <UniqueIdentifier>{cf478fa1-7acd-46ef-aff5-0b6e2a2c5cdd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="modules\utility\include">
+      <UniqueIdentifier>{3da990a5-0103-457a-bdb8-a8ff5a4aa1a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="modules\utility\source">
+      <UniqueIdentifier>{7e17d879-5d10-4091-b6f3-53d6b740abbf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\array_view.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\atomicops.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\basictypes.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\checks.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\constructormagic.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\criticalsection.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\event.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\logging.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\platform_thread.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\platform_thread_types.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\safe_conversions.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\safe_conversions_impl.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\sanitizer.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\stringutils.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\thread_annotations.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\thread_checker.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\thread_checker_impl.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\type_traits.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="common_audio\include\audio_util.h">
+      <Filter>common_audio\include</Filter>
+    </ClInclude>
+    <ClInclude Include="common_audio\resampler\include\resampler.h">
+      <Filter>common_audio\resampler\include</Filter>
+    </ClInclude>
+    <ClInclude Include="common_audio\signal_processing\include\real_fft.h">
+      <Filter>common_audio\signal_processing\include</Filter>
+    </ClInclude>
+    <ClInclude Include="common_audio\signal_processing\include\signal_processing_library.h">
+      <Filter>common_audio\signal_processing\include</Filter>
+    </ClInclude>
+    <ClInclude Include="common_audio\signal_processing\include\spl_inl.h">
+      <Filter>common_audio\signal_processing\include</Filter>
+    </ClInclude>
+    <ClInclude Include="common_audio\signal_processing\complex_fft_tables.h">
+      <Filter>common_audio\signal_processing</Filter>
+    </ClInclude>
+    <ClInclude Include="common_audio\signal_processing\resample_by_2_internal.h">
+      <Filter>common_audio\signal_processing</Filter>
+    </ClInclude>
+    <ClInclude Include="common_audio\vad\include\webrtc_vad.h">
+      <Filter>common_audio\vad\include</Filter>
+    </ClInclude>
+    <ClInclude Include="common_audio\vad\vad_core.h">
+      <Filter>common_audio\vad</Filter>
+    </ClInclude>
+    <ClInclude Include="common_audio\vad\vad_filterbank.h">
+      <Filter>common_audio\vad</Filter>
+    </ClInclude>
+    <ClInclude Include="common_audio\vad\vad_gmm.h">
+      <Filter>common_audio\vad</Filter>
+    </ClInclude>
+    <ClInclude Include="common_audio\vad\vad_sp.h">
+      <Filter>common_audio\vad</Filter>
+    </ClInclude>
+    <ClInclude Include="common_audio\fft4g.h">
+      <Filter>common_audio</Filter>
+    </ClInclude>
+    <ClInclude Include="common_audio\ring_buffer.h">
+      <Filter>common_audio</Filter>
+    </ClInclude>
+    <ClInclude Include="common_audio\wav_file.h">
+      <Filter>common_audio</Filter>
+    </ClInclude>
+    <ClInclude Include="common_audio\wav_header.h">
+      <Filter>common_audio</Filter>
+    </ClInclude>
+    <ClInclude Include="common_video\rotation.h">
+      <Filter>common_video</Filter>
+    </ClInclude>
+    <ClInclude Include="system_wrappers\include\compile_assert_c.h">
+      <Filter>system_wrappers\include</Filter>
+    </ClInclude>
+    <ClInclude Include="system_wrappers\include\cpu_features_wrapper.h">
+      <Filter>system_wrappers\include</Filter>
+    </ClInclude>
+    <ClInclude Include="system_wrappers\include\logging.h">
+      <Filter>system_wrappers\include</Filter>
+    </ClInclude>
+    <ClInclude Include="system_wrappers\include\metrics.h">
+      <Filter>system_wrappers\include</Filter>
+    </ClInclude>
+    <ClInclude Include="system_wrappers\include\metrics_default.h">
+      <Filter>system_wrappers\include</Filter>
+    </ClInclude>
+    <ClInclude Include="typedefs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common_types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\audio_coding\codecs\isac\bandwidth_info.h">
+      <Filter>modules\audio_coding\codecs\isac</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\audio_coding\codecs\isac\main\include\isac.h">
+      <Filter>modules\audio_coding\codecs\isac\main\include</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\audio_coding\codecs\isac\main\source\codec.h">
+      <Filter>modules\audio_coding\codecs\isac\main\source</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\audio_coding\codecs\isac\main\source\entropy_coding.h">
+      <Filter>modules\audio_coding\codecs\isac\main\source</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\audio_coding\codecs\isac\main\source\filterbank_tables.h">
+      <Filter>modules\audio_coding\codecs\isac\main\source</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\audio_coding\codecs\isac\main\source\lpc_analysis.h">
+      <Filter>modules\audio_coding\codecs\isac\main\source</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\audio_coding\codecs\isac\main\source\os_specific_inline.h">
+      <Filter>modules\audio_coding\codecs\isac\main\source</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\audio_coding\codecs\isac\main\source\pitch_estimator.h">
+      <Filter>modules\audio_coding\codecs\isac\main\source</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\audio_coding\codecs\isac\main\source\settings.h">
+      <Filter>modules\audio_coding\codecs\isac\main\source</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\audio_coding\codecs\isac\main\source\structs.h">
+      <Filter>modules\audio_coding\codecs\isac\main\source</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\audio_processing\aec\aec_common.h">
+      <Filter>modules\audio_processing\aec</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\audio_processing\aec\aec_core.h">
+      <Filter>modules\audio_processing\aec</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\audio_processing\aec\aec_core_optimized_methods.h">
+      <Filter>modules\audio_processing\aec</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\audio_processing\aec\aec_rdft.h">
+      <Filter>modules\audio_processing\aec</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\audio_processing\aec\aec_resampler.h">
+      <Filter>modules\audio_processing\aec</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\audio_processing\aec\echo_cancellation.h">
+      <Filter>modules\audio_processing\aec</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\audio_processing\aecm\aecm_core.h">
+      <Filter>modules\audio_processing\aecm</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\audio_processing\aecm\aecm_defines.h">
+      <Filter>modules\audio_processing\aecm</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\audio_processing\aecm\echo_control_mobile.h">
+      <Filter>modules\audio_processing\aecm</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\audio_processing\agc\legacy\gain_control.h">
+      <Filter>modules\audio_processing\agc\legacy</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\audio_processing\logging\apm_data_dumper.h">
+      <Filter>modules\audio_processing\logging</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\audio_processing\ns\defines.h">
+      <Filter>modules\audio_processing\ns</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\audio_processing\ns\noise_suppression.h">
+      <Filter>modules\audio_processing\ns</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\audio_processing\ns\noise_suppression_x.h">
+      <Filter>modules\audio_processing\ns</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\audio_processing\ns\ns_core.h">
+      <Filter>modules\audio_processing\ns</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\audio_processing\ns\nsx_core.h">
+      <Filter>modules\audio_processing\ns</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\audio_processing\ns\nsx_defines.h">
+      <Filter>modules\audio_processing\ns</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\audio_processing\ns\windows_private.h">
+      <Filter>modules\audio_processing\ns</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\audio_processing\utility\block_mean_calculator.h">
+      <Filter>modules\audio_processing\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\audio_processing\utility\delay_estimator.h">
+      <Filter>modules\audio_processing\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\audio_processing\utility\delay_estimator_internal.h">
+      <Filter>modules\audio_processing\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\audio_processing\utility\delay_estimator_wrapper.h">
+      <Filter>modules\audio_processing\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\audio_processing\vad\common.h">
+      <Filter>modules\audio_processing\vad</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\audio_processing\vad\gmm.h">
+      <Filter>modules\audio_processing\vad</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\audio_processing\vad\noise_gmm_tables.h">
+      <Filter>modules\audio_processing\vad</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\audio_processing\vad\pitch_based_vad.h">
+      <Filter>modules\audio_processing\vad</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\audio_processing\vad\pitch_internal.h">
+      <Filter>modules\audio_processing\vad</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\audio_processing\vad\pole_zero_filter.h">
+      <Filter>modules\audio_processing\vad</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\audio_processing\vad\standalone_vad.h">
+      <Filter>modules\audio_processing\vad</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\audio_processing\vad\vad_audio_proc.h">
+      <Filter>modules\audio_processing\vad</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\audio_processing\vad\vad_audio_proc_internal.h">
+      <Filter>modules\audio_processing\vad</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\audio_processing\vad\vad_circular_buffer.h">
+      <Filter>modules\audio_processing\vad</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\audio_processing\vad\voice_activity_detector.h">
+      <Filter>modules\audio_processing\vad</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\audio_processing\vad\voice_gmm_tables.h">
+      <Filter>modules\audio_processing\vad</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\include\module_common_types.h">
+      <Filter>modules\include</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\utility\include\audio_frame_operations.h">
+      <Filter>modules\utility\include</Filter>
+    </ClInclude>
+    <ClInclude Include="base\win32.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\arraysize.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\byteorder.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\common.h">
+      <Filter>base</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="base\checks.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\criticalsection.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\event.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\platform_thread.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\thread_checker_impl.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="common_audio\resampler\resampler.cc">
+      <Filter>common_audio\resampler</Filter>
+    </ClCompile>
+    <ClCompile Include="common_audio\signal_processing\complex_bit_reverse.c">
+      <Filter>common_audio\signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="common_audio\signal_processing\complex_fft.c">
+      <Filter>common_audio\signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="common_audio\signal_processing\copy_set_operations.c">
+      <Filter>common_audio\signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="common_audio\signal_processing\cross_correlation.c">
+      <Filter>common_audio\signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="common_audio\signal_processing\division_operations.c">
+      <Filter>common_audio\signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="common_audio\signal_processing\downsample_fast.c">
+      <Filter>common_audio\signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="common_audio\signal_processing\energy.c">
+      <Filter>common_audio\signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="common_audio\signal_processing\get_scaling_square.c">
+      <Filter>common_audio\signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="common_audio\signal_processing\min_max_operations.c">
+      <Filter>common_audio\signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="common_audio\signal_processing\randomization_functions.c">
+      <Filter>common_audio\signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="common_audio\signal_processing\real_fft.c">
+      <Filter>common_audio\signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="common_audio\signal_processing\resample.c">
+      <Filter>common_audio\signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="common_audio\signal_processing\resample_48khz.c">
+      <Filter>common_audio\signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="common_audio\signal_processing\resample_by_2.c">
+      <Filter>common_audio\signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="common_audio\signal_processing\resample_by_2_internal.c">
+      <Filter>common_audio\signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="common_audio\signal_processing\resample_fractional.c">
+      <Filter>common_audio\signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="common_audio\signal_processing\spl_init.c">
+      <Filter>common_audio\signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="common_audio\signal_processing\spl_sqrt_floor.c">
+      <Filter>common_audio\signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="common_audio\signal_processing\vector_scaling_operations.c">
+      <Filter>common_audio\signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="common_audio\vad\vad_core.c">
+      <Filter>common_audio\vad</Filter>
+    </ClCompile>
+    <ClCompile Include="common_audio\vad\vad_filterbank.c">
+      <Filter>common_audio\vad</Filter>
+    </ClCompile>
+    <ClCompile Include="common_audio\vad\vad_gmm.c">
+      <Filter>common_audio\vad</Filter>
+    </ClCompile>
+    <ClCompile Include="common_audio\vad\vad_sp.c">
+      <Filter>common_audio\vad</Filter>
+    </ClCompile>
+    <ClCompile Include="common_audio\vad\webrtc_vad.c">
+      <Filter>common_audio\vad</Filter>
+    </ClCompile>
+    <ClCompile Include="common_audio\audio_util.cc">
+      <Filter>common_audio</Filter>
+    </ClCompile>
+    <ClCompile Include="common_audio\fft4g.c">
+      <Filter>common_audio</Filter>
+    </ClCompile>
+    <ClCompile Include="common_audio\ring_buffer.c">
+      <Filter>common_audio</Filter>
+    </ClCompile>
+    <ClCompile Include="common_audio\wav_file.cc">
+      <Filter>common_audio</Filter>
+    </ClCompile>
+    <ClCompile Include="common_audio\wav_header.cc">
+      <Filter>common_audio</Filter>
+    </ClCompile>
+    <ClCompile Include="system_wrappers\source\cpu_features.cc">
+      <Filter>system_wrappers\source</Filter>
+    </ClCompile>
+    <ClCompile Include="system_wrappers\source\metrics_default.cc">
+      <Filter>system_wrappers\source</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\audio_coding\codecs\isac\main\source\filter_functions.c">
+      <Filter>modules\audio_coding\codecs\isac\main\source</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\audio_coding\codecs\isac\main\source\filterbank_tables.c">
+      <Filter>modules\audio_coding\codecs\isac\main\source</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\audio_coding\codecs\isac\main\source\filterbanks.c">
+      <Filter>modules\audio_coding\codecs\isac\main\source</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\audio_coding\codecs\isac\main\source\intialize.c">
+      <Filter>modules\audio_coding\codecs\isac\main\source</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\audio_coding\codecs\isac\main\source\lpc_analysis.c">
+      <Filter>modules\audio_coding\codecs\isac\main\source</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\audio_coding\codecs\isac\main\source\pitch_estimator.c">
+      <Filter>modules\audio_coding\codecs\isac\main\source</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\audio_coding\codecs\isac\main\source\pitch_filter.c">
+      <Filter>modules\audio_coding\codecs\isac\main\source</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\audio_processing\aec\aec_core.cc">
+      <Filter>modules\audio_processing\aec</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\audio_processing\aec\aec_core_sse2.cc">
+      <Filter>modules\audio_processing\aec</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\audio_processing\aec\aec_rdft.cc">
+      <Filter>modules\audio_processing\aec</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\audio_processing\aec\aec_rdft_sse2.cc">
+      <Filter>modules\audio_processing\aec</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\audio_processing\aec\aec_resampler.cc">
+      <Filter>modules\audio_processing\aec</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\audio_processing\aec\echo_cancellation.cc">
+      <Filter>modules\audio_processing\aec</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\audio_processing\aecm\aecm_core.cc">
+      <Filter>modules\audio_processing\aecm</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\audio_processing\aecm\aecm_core_c.cc">
+      <Filter>modules\audio_processing\aecm</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\audio_processing\aecm\echo_control_mobile.cc">
+      <Filter>modules\audio_processing\aecm</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\audio_processing\logging\apm_data_dumper.cc">
+      <Filter>modules\audio_processing\logging</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\audio_processing\ns\noise_suppression.c">
+      <Filter>modules\audio_processing\ns</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\audio_processing\ns\noise_suppression_x.c">
+      <Filter>modules\audio_processing\ns</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\audio_processing\ns\ns_core.c">
+      <Filter>modules\audio_processing\ns</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\audio_processing\ns\nsx_core.c">
+      <Filter>modules\audio_processing\ns</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\audio_processing\ns\nsx_core_c.c">
+      <Filter>modules\audio_processing\ns</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\audio_processing\utility\block_mean_calculator.cc">
+      <Filter>modules\audio_processing\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\audio_processing\utility\delay_estimator.cc">
+      <Filter>modules\audio_processing\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\audio_processing\utility\delay_estimator_wrapper.cc">
+      <Filter>modules\audio_processing\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\audio_processing\vad\gmm.cc">
+      <Filter>modules\audio_processing\vad</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\audio_processing\vad\pitch_based_vad.cc">
+      <Filter>modules\audio_processing\vad</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\audio_processing\vad\pitch_internal.cc">
+      <Filter>modules\audio_processing\vad</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\audio_processing\vad\pole_zero_filter.cc">
+      <Filter>modules\audio_processing\vad</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\audio_processing\vad\standalone_vad.cc">
+      <Filter>modules\audio_processing\vad</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\audio_processing\vad\vad_audio_proc.cc">
+      <Filter>modules\audio_processing\vad</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\audio_processing\vad\vad_circular_buffer.cc">
+      <Filter>modules\audio_processing\vad</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\audio_processing\vad\voice_activity_detector.cc">
+      <Filter>modules\audio_processing\vad</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\utility\source\audio_frame_operations.cc">
+      <Filter>modules\utility\source</Filter>
+    </ClCompile>
+    <ClCompile Include="base\win32.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\common.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
