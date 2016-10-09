@@ -36,14 +36,17 @@ int main(int argc, const char * argv[]) {
     return 0;
 }
 
-// 回声消除功能
-// @mic_pcm 麦克风录制的混音文件
-// @ref_pcm 参考声音(回声)文件，数据长度应该与麦克风录制的混音文件相等
-// @out_pcm 原始声音文件
-// @sampleFrequence 采样率，只支持8000, 16000, 32000, 48000
-// @channels 声道
-// @delay_ms 麦克风录制的回声声波比参考声音声波延迟的时间，单位毫秒，
-//    PC电脑在10ms左右，苹果手机在20ms左右，安卓手机在100ms左右。
+/**
+ 回声消除功能
+
+ @param mic_pcm         麦克风录制的混音文件
+ @param ref_pcm         参考声音(回声)文件，数据长度应该与麦克风录制的混音文件相等
+ @param out_pcm         原始声音文件
+ @param sampleFrequence 采样率，只支持8000, 16000, 32000, 48000
+ @param channels        声道
+ @param delay_ms        麦克风录制的回声声波比参考声音声波延迟的时间，单位毫秒，
+                        PC电脑在10ms左右，苹果手机在20ms左右，安卓手机在100ms左右。
+ */
 void testAECProcess(const char* mic_pcm,
                     const char* ref_pcm,
                     const char* out_pcm,
@@ -62,15 +65,6 @@ void testAECProcess(const char* mic_pcm,
         printf("Unsupport channels. (only 1 or 2)\n");
         return;
     }
-    
-    // SAMPLE_BITS 16
-    sampleChunkBytes = 2 * sampleNums * channels;
-        mic_buf = (short*)malloc(sampleChunkBytes + 1);
-        ref_buf = (short*)malloc(sampleChunkBytes + 1);
-        out_buf = (short*)malloc(sampleChunkBytes + 1);
-        aec_mic_buf = (float*)malloc(sampleChunkBytes * sizeof(float) + 1);
-        aec_ref_buf = (float*)malloc(sampleChunkBytes * sizeof(float) + 1);
-        aec_out_buf = (float*)malloc(sampleChunkBytes * sizeof(float) + 1);
     
     if (sampleFrequence == 8000
         || sampleFrequence == 16000
@@ -91,8 +85,19 @@ void testAECProcess(const char* mic_pcm,
         return;
     }
     
+    // SAMPLE_BITS 16
+    sampleChunkBytes = 2 * sampleNums * channels;
+    mic_buf = (short*)malloc(sampleChunkBytes + 1);
+    ref_buf = (short*)malloc(sampleChunkBytes + 1);
+    out_buf = (short*)malloc(sampleChunkBytes + 1);
+    aec_mic_buf = (float*)malloc(sampleChunkBytes * sizeof(float) + 1);
+    aec_ref_buf = (float*)malloc(sampleChunkBytes * sizeof(float) + 1);
+    aec_out_buf = (float*)malloc(sampleChunkBytes * sizeof(float) + 1);
+    
     webrtc::Aec* aec = NULL;
     webrtc::AecConfig config;
+    config.nlpMode = webrtc::kAecNlpModerate;
+    config.skewMode = config.metricsMode = config.delay_logging = webrtc::kAecFalse;
     
     aec = (webrtc::Aec*)webrtc::WebRtcAec_Create();
     webrtc::WebRtcAec_Init(aec, sampleFrequence, sampleFrequence);
